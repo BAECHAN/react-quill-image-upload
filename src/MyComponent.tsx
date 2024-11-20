@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import 'react-quill/dist/quill.snow.css'; //import해오기2
-import ReactQuillEditor from './ReactQuillEditor';
+import React, { useState } from "react";
+import "react-quill-new/dist/quill.snow.css";
+import ReactQuillEditor from "./ReactQuillEditor";
 
 const MyComponent = () => {
-  const [content, setContent] = useState('');
+  const [content, setContent] = useState("");
 
   const handleEditorChange = (value: string) => {
     setContent(value); // 상태 업데이트
@@ -13,7 +13,7 @@ const MyComponent = () => {
     <ReactQuillEditor
       value={content}
       onChange={handleEditorChange}
-      style={{ width: '100%', height: '80%' }}
+      style={{ width: "100%", height: "36rem" }}
     />
   );
 };
